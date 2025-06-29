@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusTrade | Institutional-Grade Crypto</title>
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/css/main.css" as="style">
+  <link rel="preload" href="assets/js/gsap.js" as="script">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+  <!-- Animated Gradient Background -->
+  <div class="gradient-bg"></div>
+  
+  <!-- Glowing Particles -->
+  <canvas id="particles"></canvas>
+
+  <header class="header">
+    <div class="logo" data-animate="fade-down">
+      <span class="gradient-text">NexusTrade</span>
+    </div>
+    <nav data-animate="fade-down" data-delay="0.2">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="affiliate.html" class="btn-primary">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content" data-animate="fade-right">
+        <h1>
+          <span class="gradient-text">Trade Bitcoin</span><br>
+          Like Wall Street
+        </h1>
+        <p class="subtitle">Zero fees • Lightning execution • AI-powered signals</p>
+        <div class="cta-group">
+          <a href="affiliate.html" class="btn-primary pulse">Start Trading</a>
+          <a href="#demo" class="btn-secondary">Live Demo</a>
+        </div>
+      </div>
+      <div class="hero-chart" data-animate="fade-left">
+        <!-- Animated TradingView Chart -->
+        <div class="chart-container">
+          <div class="price-label">
+            <span class="currency">BTC/USD</span>
+            <span id="btc-price" class="price">$00,000.00</span>
+            <span id="price-change" class="change positive">+0.00%</span>
+          </div>
+          <div class="chart-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features">
+      <!-- Animated feature cards -->
+    </section>
+  </main>
+
+  <!-- GSAP + Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="assets/js/gsap.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
