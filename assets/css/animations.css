@@ -1,0 +1,32 @@
+/* Keyframes */
+@keyframes gradientRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(108,77,246,0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(108,77,246,0); }
+  100% { box-shadow: 0 0 0 0 rgba(108,77,246,0); }
+}
+
+/* GSAP Animation Classes */
+[data-animate="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+[data-animate="fade-down"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+[data-animate="fade-right"] {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+[data-animate="fade-left"] {
+  opacity: 0;
+  transform: translateX(30px);
+}
